@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-25T05:48:12.101Z",
+    "end": "2025-05-25T05:48:15.076Z",
+    "duration": 2975,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b1b8c2a0-bc33-456c-9db5-487d95f23e89",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testcases\\OpenAccountTest.cy.js",
+      "file": "cypress\\e2e\\testcases\\OpenAccountTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2f7a1fb6-82f2-4885-9f5b-a5cb9cb3648b",
+          "title": "Open Account",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open Account",
+              "fullTitle": "Open Account Open Account",
+              "timedOut": null,
+              "duration": 2939,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePageActions.default.loginAsBankManager();\n_AddCustomerActions.default.AddNewCustomer(data.firstName, data.lastName, data.postCode);\n// AddCustomerActions.validateAlert(data.alertMsg)\n_OpenAccountActions.default.openaccount();\n_OpenAccountActions.default.validateAlert(\"Account created successfully with account Number\");",
+              "err": {},
+              "uuid": "30b77e43-b202-414d-a5d7-301dafa9744a",
+              "parentUUID": "2f7a1fb6-82f2-4885-9f5b-a5cb9cb3648b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "30b77e43-b202-414d-a5d7-301dafa9744a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2939,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

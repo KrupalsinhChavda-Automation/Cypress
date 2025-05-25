@@ -1,0 +1,434 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 8,
+    "passes": 8,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 8,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2025-05-25T05:47:57.285Z",
+    "end": "2025-05-25T06:03:47.463Z",
+    "duration": 950178
+  },
+  "results": [
+    {
+      "uuid": "7912b4c2-0306-4af9-92c9-a6fee85b224f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testcases\\BankManagerLoginTest.cy.js",
+      "file": "cypress\\e2e\\testcases\\BankManagerLoginTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9e3dcd16-0ef2-40a4-8d28-0e004b2eb039",
+          "title": "Login as Bank Manager and verify it",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Title",
+              "fullTitle": "Login as Bank Manager and verify it Verify Title",
+              "timedOut": null,
+              "duration": 1081,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePageActions.default.verifyTitle().should('eq', 'Protractor practice website - Banking App');",
+              "err": {},
+              "uuid": "acc8365e-4fc9-4cee-aaf9-26d90ef23ad3",
+              "parentUUID": "9e3dcd16-0ef2-40a4-8d28-0e004b2eb039",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Login as Bank Manager",
+              "fullTitle": "Login as Bank Manager and verify it Test Login as Bank Manager",
+              "timedOut": null,
+              "duration": 619,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePageActions.default.loginAsBankManager();",
+              "err": {},
+              "uuid": "a92c1d53-a1a1-459c-9583-e09b075974dc",
+              "parentUUID": "9e3dcd16-0ef2-40a4-8d28-0e004b2eb039",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "acc8365e-4fc9-4cee-aaf9-26d90ef23ad3",
+            "a92c1d53-a1a1-459c-9583-e09b075974dc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1700,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b1b8c2a0-bc33-456c-9db5-487d95f23e89",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testcases\\OpenAccountTest.cy.js",
+      "file": "cypress\\e2e\\testcases\\OpenAccountTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2f7a1fb6-82f2-4885-9f5b-a5cb9cb3648b",
+          "title": "Open Account",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open Account",
+              "fullTitle": "Open Account Open Account",
+              "timedOut": null,
+              "duration": 2939,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePageActions.default.loginAsBankManager();\n_AddCustomerActions.default.AddNewCustomer(data.firstName, data.lastName, data.postCode);\n// AddCustomerActions.validateAlert(data.alertMsg)\n_OpenAccountActions.default.openaccount();\n_OpenAccountActions.default.validateAlert(\"Account created successfully with account Number\");",
+              "err": {},
+              "uuid": "30b77e43-b202-414d-a5d7-301dafa9744a",
+              "parentUUID": "2f7a1fb6-82f2-4885-9f5b-a5cb9cb3648b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "30b77e43-b202-414d-a5d7-301dafa9744a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2939,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "43ac6e35-7ffc-4626-87ae-be24fb4f541c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testcases\\AddCustomerTest.cy.js",
+      "file": "cypress\\e2e\\testcases\\AddCustomerTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5bfab1d8-a611-492f-b35a-4cb0a992aa65",
+          "title": "Login as Bank Manager and verify it",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add new customer as Bank Manager",
+              "fullTitle": "Login as Bank Manager and verify it Add new customer as Bank Manager",
+              "timedOut": null,
+              "duration": 3524,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePageActions.default.loginAsBankManager();\n_AddCustomerActions.default.AddNewCustomer(data.firstName, data.lastName, data.postCode);\n_AddCustomerActions.default.validateAlert(data.alertMsg);",
+              "err": {},
+              "uuid": "3c2db2db-9efd-497d-b828-be979bfe15b9",
+              "parentUUID": "5bfab1d8-a611-492f-b35a-4cb0a992aa65",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3c2db2db-9efd-497d-b828-be979bfe15b9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3524,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "f96acb13-f15f-4031-84f9-ae009e94dbd9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testcases\\BankManagerLoginTest.cy.js",
+      "file": "cypress\\e2e\\testcases\\BankManagerLoginTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "71066744-6bd6-4e23-becf-b53730de4b55",
+          "title": "Login as Bank Manager and verify it",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Title",
+              "fullTitle": "Login as Bank Manager and verify it Verify Title",
+              "timedOut": null,
+              "duration": 1108,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePageActions.default.verifyTitle().should('eq', 'Protractor practice website - Banking App');",
+              "err": {},
+              "uuid": "7e17aa1a-2a9c-42c3-b795-0de40323acbc",
+              "parentUUID": "71066744-6bd6-4e23-becf-b53730de4b55",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Login as Bank Manager",
+              "fullTitle": "Login as Bank Manager and verify it Test Login as Bank Manager",
+              "timedOut": null,
+              "duration": 615,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePageActions.default.loginAsBankManager();",
+              "err": {},
+              "uuid": "16a3c6c2-bf4b-4ee1-b341-a7f5b81212be",
+              "parentUUID": "71066744-6bd6-4e23-becf-b53730de4b55",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7e17aa1a-2a9c-42c3-b795-0de40323acbc",
+            "16a3c6c2-bf4b-4ee1-b341-a7f5b81212be"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1723,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "7bf8ae45-910d-46ec-8cf2-eae17cc840f7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testcases\\OpenAccountTest.cy.js",
+      "file": "cypress\\e2e\\testcases\\OpenAccountTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "349e673e-1483-408b-87f3-4d3df32e3e45",
+          "title": "Open Account",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open Account",
+              "fullTitle": "Open Account Open Account",
+              "timedOut": null,
+              "duration": 4569,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePageActions.default.loginAsBankManager();\n_AddCustomerActions.default.AddNewCustomer(data.firstName, data.lastName, data.postCode);\n// AddCustomerActions.validateAlert(data.alertMsg)\n_OpenAccountActions.default.openaccount();\n_OpenAccountActions.default.validateAlert(\"Account created successfully with account Number\");",
+              "err": {},
+              "uuid": "0f1fad7e-99cd-4307-935f-52869fa10eaf",
+              "parentUUID": "349e673e-1483-408b-87f3-4d3df32e3e45",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0f1fad7e-99cd-4307-935f-52869fa10eaf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4569,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c1b77ef1-6a1d-4063-8c93-10d73630a9be",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testcases\\AddCustomerTest.cy.js",
+      "file": "cypress\\e2e\\testcases\\AddCustomerTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "16d09cee-e404-4c2e-aeb6-76db6598b9e0",
+          "title": "Login as Bank Manager and verify it",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add new customer as Bank Manager",
+              "fullTitle": "Login as Bank Manager and verify it Add new customer as Bank Manager",
+              "timedOut": null,
+              "duration": 4486,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_HomePageActions.default.loginAsBankManager();\n_AddCustomerActions.default.AddNewCustomer(data.firstName, data.lastName, data.postCode);\n_AddCustomerActions.default.validateAlert(data.alertMsg);",
+              "err": {},
+              "uuid": "2b52d35f-6db1-462d-b89e-91e2676da41d",
+              "parentUUID": "16d09cee-e404-4c2e-aeb6-76db6598b9e0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2b52d35f-6db1-462d-b89e-91e2676da41d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4486,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
