@@ -5,10 +5,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "testcases": "npx cypress run --browser chrome --headed",
+    "testcases-allure":"npx cypress run --browser chrome --headed --reporter mocha-allure-reporter",
+    "generate-allure": "allure generate allure-result --clean -o allure-report && allure open allure-report",
     "merge-reports": "mochawesome-merge cypress/reports/mochawesome-report/*.json > mochawesome.json",
     "generate-reports": "marge mochawesome.json",
-    "finaltest": "npm run testcases && npm run merge-reports && npm run generate-reports"
-    },
+    "finaltest": "npm run testcases && npm run merge-reports && npm run generate-reports",
+    "finaltest-allure": "npm run testcases-allure && npm run generate-allurereports"
+  },
   "author": "",
   "license": "ISC",
   "description": "",
@@ -21,6 +24,7 @@
     "mochawesome-report-generator": "^6.2.0"
   },
   "dependencies": {
-    "cypress-downloadfile": "^1.2.4"
+    "cypress-downloadfile": "^1.2.4",
+    "mocha-allure-reporter": "^1.4.0"
   }
 }
